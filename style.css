@@ -9,13 +9,6 @@
 }
 
 @media (min-width: 993px) {
-    /* .Ch_Pf_Content{
-        background-image: url(images/banner.avif);
-        background-position: center;
-        background-size: cover;
-        object-fit: cover;
-        width: 100%;
-    } */
     .Topbar nav{
         padding: 30px;
         ul{
@@ -49,6 +42,15 @@
         .Ch_Home {
             .Ch_Home_Content {
                 margin: 0rem 5rem;
+                .home_name{
+                    position: absolute;
+                    top: 7rem;
+                    left: 0;
+                    font-size: 25vw;
+                    color: rgb(166 111 111 / 10%);
+                    z-index: -1;
+                    font-weight: 900;
+                }
                 .Social_links{
                     position: absolute;
                     right: 30%;
@@ -104,6 +106,7 @@
                             background: none;
                             border-radius: 1.5rem;
                             color: #272727;
+                            width: 11rem;
                         }
                         button:hover{
                             color: #272727 !important;
@@ -115,6 +118,62 @@
     }
     #About{
         margin: 2rem 10rem;
+        position: relative;
+        ul.About_Info{
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            margin-top: 1.4rem;
+        }
+        ul.About_Info li{
+            list-style: none;
+            margin-bottom: 10px;
+        }
+        ul.About_Info li span:first-child {
+            width: 130px;
+            font-weight: 600;
+            color: #272727;
+        }
+        .About_Image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .About_Image img{
+            width: 80%;
+        }
+        .About_Title{
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        .About_TagLine{
+            margin-bottom: 2rem;
+        }
+
+        .counter-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columns, each taking up equal space */
+            gap: 2px; /* Adjust the space between the grid items as needed */
+            padding-top: 1.5rem;
+            border-top: 1px solid #272727;
+        }
+        .big{
+            position: absolute;
+            top: 0px;
+            left: 0;
+            font-size: 7vw;
+            color: rgb(240 232 232 / 87%);
+            z-index: -1;
+            font-weight: 900;
+        }
+        .counter {
+            p{
+                font-size: 14px;
+            }
+        }
+
     }
     
 }
@@ -215,6 +274,7 @@
                             background: none;
                             border-radius: 1.5rem;
                             color: #272727;
+                            width: 11rem;
                         }
                         button:hover{
                             color: #272727 !important;
@@ -325,6 +385,7 @@
                             background: none;
                             border-radius: 1.5rem;
                             color: #272727;
+                            width: 11rem;
                         }
                         button:hover{
                             color: #272727 !important;
