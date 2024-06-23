@@ -37,7 +37,6 @@
             color: #272727;
         }
     }
-    
     #Home {
         .Ch_Home {
             .Ch_Home_Content {
@@ -119,6 +118,7 @@
     #About{
         margin: 2rem 10rem;
         position: relative;
+        margin-top: 7rem;
         ul.About_Info{
             display: inline-block;
             padding: 0;
@@ -175,18 +175,129 @@
         }
 
     }
-    
+    #Resume{
+        margin: 2rem 10rem;
+        position: relative;
+        margin-top: 7rem;
+        .Resume_Title_Content{
+            .Resume_Big_Title{
+                position: absolute;
+                top: 0px;
+                left: 0;
+                font-size: 7vw;
+                color: rgb(182 141 141 / 10%);
+                z-index: -1;
+                font-weight: 900;
+            }
+            .Resume_Title{
+                font-size: 50px;
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+            }
+        }
+        .Resume_Content{
+            .Resume_Year{
+                font-size: 26px;
+                font-weight: 900;
+                color: #B6E0DB;
+            }
+            .card{
+                height: 20rem;
+            }
+            .Resume_Branch{
+                font-weight: 700;
+            }
+            .Resume_College{
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+            .Resume_Desc{
+               font-size: 12px; 
+               margin-top: 2rem;
+            }
+        }
+    }
+    #Skills{
+        margin: 2rem 10rem;
+        position: relative;
+        margin-top: 7rem;
+        .Skills_Title_Content{
+            .Skills_Big_Title{
+                position: absolute;
+                top: 0px;
+                left: 0;
+                font-size: 7vw;
+                color: rgb(182 141 141 / 10%);
+                z-index: -1;
+                font-weight: 900;
+            }
+            .Skills_Title{
+                font-size: 50px;
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+            }
+        }
+        .Skills_Content{
+            .col-xl-6{
+                margin-bottom: 3rem;
+            }
+            .Skills_Progress{
+                height: 10px;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                background: #cccc;
+                overflow: visible;
+                border-radius: 10px;
+                position: relative;
+                .progress-bar{
+                    background: #B6E0DB;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                    font-size: 12px;
+                    line-height: 1.2;
+                    color: #000000;
+                    font-weight: 600;
+                    position: relative;
+                    overflow: visible;
+                    -webkit-border-radius: 2px;
+                    -moz-border-radius: 2px;
+                    -ms-border-radius: 2px;
+                    border-radius: 2px;
+                    height: 10px;
+                }
+                .Skills_Progress_Data{
+                    position: absolute;
+                    top: -1.5rem;
+                    right: 0px;
+                }
+
+            }
+        }
+    }
+    #Projects{
+        margin: 2rem 10rem;
+        position: relative;
+        margin-top: 7rem;
+        .Pro_Title_Content{
+            .Pro_Big_Title{
+                position: absolute;
+                top: 0px;
+                left: 0;
+                font-size: 7vw;
+                color: rgb(182 141 141 / 10%);
+                z-index: -1;
+                font-weight: 900;
+            }
+            .Pro_Title{
+                font-size: 50px;
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+            }
+        } 
+    }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
-
-    /* .Ch_Pf_Content{
-        background-image: url(images/banner.avif);
-        background-position: center;
-        background-size: cover;
-        object-fit: cover;
-        width: 100%;
-    } */
     .Topbar nav{
         padding: 30px;
         ul{
@@ -219,6 +330,15 @@
         .Ch_Home {
             .Ch_Home_Content {
                 margin: 0rem 5rem;
+                .home_name{
+                    position: absolute;
+                    top: 7rem;
+                    left: 0;
+                    font-size: 25vw;
+                    color: rgb(166 111 111 / 10%);
+                    z-index: -1;
+                    font-weight: 900;
+                }
                 .Social_links{
                     position: absolute;
                     right: 30%;
@@ -284,17 +404,190 @@
             }
         }
     }
+    #About{
+        margin: 2rem 10rem;
+        position: relative;
+        margin-top: 7rem;
+        ul.About_Info{
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            margin-top: 1.4rem;
+        }
+        ul.About_Info li{
+            list-style: none;
+            margin-bottom: 10px;
+        }
+        ul.About_Info li span:first-child {
+            width: 130px;
+            font-weight: 600;
+            color: #272727;
+        }
+        .About_Image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .About_Image img{
+            width: 80%;
+        }
+        .About_Title{
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        .About_TagLine{
+            margin-bottom: 2rem;
+        }
+
+        .counter-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columns, each taking up equal space */
+            gap: 2px; /* Adjust the space between the grid items as needed */
+            padding-top: 1.5rem;
+            border-top: 1px solid #272727;
+        }
+        .big{
+            position: absolute;
+            top: 0px;
+            left: 0;
+            font-size: 7vw;
+            color: rgb(240 232 232 / 87%);
+            z-index: -1;
+            font-weight: 900;
+        }
+        .counter {
+            p{
+                font-size: 14px;
+            }
+        }
+
+    }
+    #Resume{
+        margin: 2rem 10rem;
+        position: relative;
+        margin-top: 7rem;
+        .Resume_Title_Content{
+            .Resume_Big_Title{
+                position: absolute;
+                top: 0px;
+                left: 0;
+                font-size: 7vw;
+                color: rgb(182 141 141 / 10%);
+                z-index: -1;
+                font-weight: 900;
+            }
+            .Resume_Title{
+                font-size: 50px;
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+            }
+        }
+        .Resume_Content{
+            .Resume_Year{
+                font-size: 26px;
+                font-weight: 900;
+                color: #B6E0DB;
+            }
+            .card{
+                height: 20rem;
+            }
+            .Resume_Branch{
+                font-weight: 700;
+            }
+            .Resume_College{
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+            .Resume_Desc{
+               font-size: 12px; 
+               margin-top: 2rem;
+            }
+        }
+    }
+    #Skills{
+        margin: 2rem 10rem;
+        position: relative;
+        margin-top: 7rem;
+        .Skills_Title_Content{
+            .Skills_Big_Title{
+                position: absolute;
+                top: 0px;
+                left: 0;
+                font-size: 7vw;
+                color: rgb(182 141 141 / 10%);
+                z-index: -1;
+                font-weight: 900;
+            }
+            .Skills_Title{
+                font-size: 50px;
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+            }
+        }
+        .Skills_Content{
+            .col-xl-6{
+                margin-bottom: 3rem;
+            }
+            .Skills_Progress{
+                height: 10px;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                background: #cccc;
+                overflow: visible;
+                border-radius: 10px;
+                position: relative;
+                .progress-bar{
+                    background: #B6E0DB;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                    font-size: 12px;
+                    line-height: 1.2;
+                    color: #000000;
+                    font-weight: 600;
+                    position: relative;
+                    overflow: visible;
+                    -webkit-border-radius: 2px;
+                    -moz-border-radius: 2px;
+                    -ms-border-radius: 2px;
+                    border-radius: 2px;
+                    height: 10px;
+                }
+                .Skills_Progress_Data{
+                    position: absolute;
+                    top: -1.5rem;
+                    right: 0px;
+                }
+
+            }
+        }
+    }
+    #Projects{
+        margin: 2rem 10rem;
+        position: relative;
+        margin-top: 7rem;
+        .Pro_Title_Content{
+            .Pro_Big_Title{
+                position: absolute;
+                top: 0px;
+                left: 0;
+                font-size: 7vw;
+                color: rgb(182 141 141 / 10%);
+                z-index: -1;
+                font-weight: 900;
+            }
+            .Pro_Title{
+                font-size: 50px;
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+            }
+        } 
+    }
 }
 
 
 @media (min-width: 577px) and (max-width: 768px) {
-    /* .Ch_Pf_Content{
-        background-image: url(images/banner.avif);
-        background-position: center;
-        background-size: cover;
-        object-fit: cover;
-        width: 100%;
-    } */
     .Topbar nav{
         padding: 30px;
         ul{
@@ -330,6 +623,15 @@
         .Ch_Home {
             .Ch_Home_Content {
                 margin: 0rem 5rem;
+                .home_name{
+                    position: absolute;
+                    top: 15rem;
+                    left: 0;
+                    font-size: 22vw;
+                    color: rgb(166 111 111 / 10%);
+                    z-index: -1;
+                    font-weight: 900;
+                }
                 .Social_links{
                     position: absolute;
                     right: 0;
@@ -394,6 +696,189 @@
                 }
             }
         }
+    }
+    #About{
+        margin: 2rem 10rem;
+        position: relative;
+        margin-top: 7rem;
+        ul.About_Info{
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            margin-top: 1.4rem;
+        }
+        ul.About_Info li{
+            list-style: none;
+            margin-bottom: 10px;
+        }
+        ul.About_Info li span:first-child {
+            width: 130px;
+            font-weight: 600;
+            color: #272727;
+        }
+        .About_Image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .About_Image img{
+            width: 80%;
+            display: none;
+        }
+        .About_Title{
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        .About_TagLine{
+            margin-bottom: 2rem;
+        }
+
+        .counter-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columns, each taking up equal space */
+            gap: 2px; /* Adjust the space between the grid items as needed */
+            padding-top: 1.5rem;
+            border-top: 1px solid #272727;
+        }
+        .big{
+            position: absolute;
+            top: 0px;
+            left: 0;
+            font-size: 10vw;
+            color: rgb(240 232 232 / 87%);
+            z-index: -1;
+            font-weight: 900;
+        }
+        .counter {
+            p{
+                font-size: 14px;
+            }
+        }
+
+    }
+    #Resume{
+        margin: 2rem 10rem;
+        position: relative;
+        margin-top: 7rem;
+        .Resume_Title_Content{
+            .Resume_Big_Title{
+                position: absolute;
+                top: 0px;
+                left: 0;
+                font-size: 10vw;
+                color: rgb(182 141 141 / 10%);
+                z-index: -1;
+                font-weight: 900;
+            }
+            .Resume_Title{
+                font-size: 50px;
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+            }
+        }
+        .Resume_Content{
+            .Resume_Year{
+                font-size: 26px;
+                font-weight: 900;
+                color: #B6E0DB;
+            }
+            .card{
+                height: 23rem;
+                margin-bottom: 1.5rem;
+
+            }
+            .Resume_Branch{
+                font-weight: 700;
+            }
+            .Resume_College{
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+            .Resume_Desc{
+               font-size: 12px; 
+               margin-top: 2rem;
+            }
+        }
+    }
+    #Skills{
+        margin: 2rem 10rem;
+        position: relative;
+        margin-top: 7rem;
+        .Skills_Title_Content{
+            .Skills_Big_Title{
+                position: absolute;
+                top: 0px;
+                left: 0;
+                font-size: 10vw;
+                color: rgb(182 141 141 / 10%);
+                z-index: -1;
+                font-weight: 900;
+            }
+            .Skills_Title{
+                font-size: 50px;
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+            }
+        }
+        .Skills_Content{
+            .col-xl-6{
+                margin-bottom: 3rem;
+            }
+            .Skills_Progress{
+                height: 10px;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                background: #cccc;
+                overflow: visible;
+                border-radius: 10px;
+                position: relative;
+                .progress-bar{
+                    background: #B6E0DB;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                    font-size: 12px;
+                    line-height: 1.2;
+                    color: #000000;
+                    font-weight: 600;
+                    position: relative;
+                    overflow: visible;
+                    -webkit-border-radius: 2px;
+                    -moz-border-radius: 2px;
+                    -ms-border-radius: 2px;
+                    border-radius: 2px;
+                    height: 10px;
+                }
+                .Skills_Progress_Data{
+                    position: absolute;
+                    top: -1.5rem;
+                    right: 0px;
+                }
+
+            }
+        }
+    }
+    #Projects{
+        margin: 2rem 10rem;
+        position: relative;
+        margin-top: 7rem;
+        .Pro_Title_Content{
+            .Pro_Big_Title{
+                position: absolute;
+                top: 0px;
+                left: 0;
+                font-size: 10vw;
+                color: rgb(182 141 141 / 10%);
+                z-index: -1;
+                font-weight: 900;
+            }
+            .Pro_Title{
+                font-size: 50px;
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+            }
+        } 
     }
 }
 
